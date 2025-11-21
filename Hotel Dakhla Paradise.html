@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Dakhla Paradise</title>
+</head>
+<body>
+    <!--==========HEADER==========-->
+    <header bgcolor="lightblue" style="background-color: lightblue; padding: 5px;">
+        <table width="100%">
+            <tr>
+                <td width="10%">
+                    <img src="c:\Users\Hp\Desktop\tpsrc\WhatsApp Image 2025-10-28 à 15.02.52_3c2bded3.jpg" alt="Logo Hotel Dakhla Paradise" width="100%">
+                </td>
+                <td>
+                    <h1>Hôtel Dakhla Paradise</h1>
+                    <p><em>Le luxe au coeur du désert</em></p>
+                </td>
+                <td align="right">
+                    <nav>
+                        <ul style="list-style-type:none; margin:0; padding:0;">
+                            <li><a href="#Accueil">Accueil</a>
+                                <a href="#Chambres">Chambres</a>
+                                <a href="#Services">Services</a>
+                                <a href="#Reservation">Reservation</a>
+                                <a href="#Contact">Contact</a></li>
+                        </ul>
+                    </nav>
+                </td>
+            </tr>
+        </table>
+    </header>
+    <!--==========SECTION PRESENTATION============-->
+    <section bgcolor="beige" style="background-color: beige; padding: 15px;" id="Accueil">
+        <h2>Bienvenue à Dakhla Paradise</h2>
+        <p>Situé au bord de la lagune, l’Hôtel Dakhla Paradise vous 
+accueille dans un cadre idyllique 
+            entre désert et océan. Profitez d'un hébergement haut de gamme, d'un service personnalisé 
+            et d"une expérience unique au cœur du Sahara marocain. 
+        </p>
+        <center><img src="c:\Users\Hp\Desktop\tpsrc\WhatsApp Image 2025-10-28 à 15.02.52_b8f2d8cd.jpg" alt="Vue de l'hotel Dakhla Paradise" width="50%"></center>
+    </section>
+    <!--==========TABLEAU DES TARIFS-->
+        <section bgcolor="lightgray" style="background-color: lightgray; 
+padding: 15px;" id="Chambres"> 
+        <h2>Nos Tarifs</h2> 
+ 
+        <table border="1" width="100%" cellspacing="0" cellpadding="8"> 
+            <caption><strong>Tarifs des chambres – Hôtel Dakhla 
+Paradise</strong></caption> 
+            <tr bgcolor="#dddddd"> 
+                <th>Type de chambre</th> 
+                <th>Capacité</th> 
+                <th>Prix par nuit</th> 
+                <th>Petit-déjeuner</th> 
+            </tr> 
+            <tr> 
+                <td>Simple</td> 
+                <td>1 personne</td> 
+                <td>400 MAD</td> 
+                <td>Inclus</td> 
+            </tr> 
+            <tr> 
+                <td>Double</td> 
+                <td>2 personnes</td> 
+                <td>650 MAD</td> 
+                <td>Inclus</td> 
+            </tr> 
+            <tr> 
+                <td>Suite</td> 
+                <td>4 personnes</td> 
+                <td>1200 MAD</td> 
+                <td>Inclus</td> 
+            </tr> 
+            <tr> 
+                <td>Bungalow Vue Mer</td> 
+                <td>4 personnes</td> 
+                <td>1600 MAD</td> 
+                <td>Inclus</td> 
+            </tr> 
+            <tr bgcolor="#f9f9f9"> 
+                <td colspan="4" align="center"><em>Toutes les taxes 
+sont incluses dans les prix affichés.</em></td> 
+            </tr> 
+        </table> 
+    </section>
+    <!--=========FORMULAIRE DE RESERVATION==========-->
+    <section bgcolor="lightgreen" style="background-color: lightgreen; padding: 15px" id="Reservation">
+        <h2>Reservation votre séjour</h2>
+        <form action="Reservation.php" method="post">
+            <label for="nom">Nom complet :</label><br>
+            <input type="text" id="nom" name="nom" required><br><br>
+
+            <label for="email">Adresse e-mail :</label><br>
+            <input type="email" id="email" name="email" required><br><br>
+
+            <label for="arrivee">Date d'arrivée :</label><br>
+            <input type="date" id="arrivee" name="arrivee"><br><br>
+
+            <label for="depart">Date de départ :</label><br>
+            <input type="date" id="départ" name="départ"><br><br>
+
+            <label for="type">Type de Chambre :</label><br>
+            <select type="type" name="type">
+                <option>Simple</option>
+                <option>Double</option>
+                <option>Suite</option>
+                <option>Bungalow Vue Mer</option>
+            </select><br><br>
+
+            <label for="adulte">Nombre d'adultes :</label><br>
+            <select id="adulte" name="adulte">
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+            </select><br><br>
+
+            <label for="comment">Commentaires/ Demqndes spéciales :</label><br>
+            <textarea id="comment" name="comment" rows="4" cols="40" placeholder="ecrivez vos remarques ici..."></textarea><br><br>
+
+            <button type="submit">Réservastion maintenat</button>
+        </form>
+    </section>
+
+    <!--==========SECTION CONTACT==========-->
+    <section bgcolor="lightyellow" style="background-color: lightyellow; padding: 15px;" id="Contact">
+        <h2>Contactez-nous</h2>
+        <address>
+            <p><b>Adresse :</b>Avenue Al Wlaa, Dakhla, Maroc</p>
+            <p><strong>Telephone :</strong> +212 600 123 456</p>
+            <p><strong>Email  :</strong>Contact@dakhla-paradise.ma</p>
+        </address>
+    <center><img src="c:\Users\Hp\Desktop\tpsrc\WhatsApp Image 2025-10-28 à 15.02.51_97c61e1e.jpg" alt="Localisation de l'hotel" width="40%"></center>
+    </section>
+    <!--==========FOOTER==========-->
+    <footer bgcolor="#cccccc" style="background-color: #cccccc; text-align: center; padding: 10%;">
+        <p>© 2025 Hôtel Dakhla Paradise - Tous droits réservés</p>
+        <p><a href="#">Conditions générales</a></p>
+        <small>Site Web réalisé en html par Houda Taim</small>
+    </footer>
+</body>
+</html>
